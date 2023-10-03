@@ -1,0 +1,54 @@
+packages/*/tmp_dnp_repo/
+packages/*/dnp_repo/
+packages/*/DNCORE/
+packages/*/cache/
+packages/*/dappmanagerdb.json
+test_build/
+.DS_Store
+.nyc_output
+build_*
+build/
+uploader
+
+# Dependencies
+node_modules/
+
+# Test artifacts
+test_build/
+packages/*/undefined/
+packages/*/test_files/
+packages/*/test_files/*
+packages/*/test_mountpoints_*/
+packages/*/test_mountpoints_*/*
+.temp-transfer
+
+# Built schemas
+packages/common/src/validation/schemas
+
+# Version data file
+.version.json
+
+# Git data .git-data.json
+packages/*/.git-data.json
+
+# Extra
+node_modules/\.yarn-integrity
+
+# Typescript build artifacts
+build/src/dist/
+build/src/.temp-transfer/
+
+# Common
+packages/*/node_modules/
+packages/*/dist/
+packages/*/build
+packages/*/npm-debug.log*
+packages/*/yarn-debug.log*
+packages/*/yarn-error.log*
+# This project uses yarn
+packages/*/package-lock.json 
+
+# Dev links
+packages/dappmanager/dist
+packages/dappmanager/DNCORE
+packages/dappmanager/dnp_repo

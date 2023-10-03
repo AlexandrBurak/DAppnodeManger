@@ -1,0 +1,200 @@
+:root {
+  // widths
+  --sidenav-width: 12.5rem;
+  --sidenav-collapsed-width: 4.75rem;
+  --topbar-height: 3.5rem;
+  // Borders and padding
+  --container-padding: 1.5rem;
+  --border-size: 0.08rem;
+  --default-spacing: 1.25rem;
+  // time
+  --transition-time: 0.25s;
+}
+/* MUST ONLY defined z-index properties here 
+   Variable definitions are ordered from front to back
+*/
+:root {
+  /* Toastify toasts have z-index: 9999 */
+  --z-index-confirm-dialog: 5000;
+  --z-index-welcome-dialog: 4000;
+  --z-index-sidebar: 2000;
+  --z-index-topbar: 1000;
+}
+
+/* 
+  TEXT STYLES 
+*/
+body {
+  font-family: overpass, sans-serif !important;
+}
+
+/* Reset margins and underlying sizes. 
+   The height 100% is necessary so child elements have a reference to be full width
+*/
+
+html,
+body,
+.body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/********
+  SIDEBAR
+  ******* 
+  The sidebar divided in two areas to match the header 
+  The responsiveness is controlled by making the width = 0 
+*/
+#sidebar {
+  align-items: center;
+  /* Basic sizing */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--sidenav-width);
+  transition: width var(--transition-time);
+  /* When the screen height is really small, show scrolling
+     When the sidenav collapses, hide its content
+   */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* While the sidenav is collapsing, make sure the content stays straight */
+  white-space: nowrap;
+  /* place sidebar on top of the header and content */
+  z-index: var(--z-index-sidebar);
+
+  > .nav {
+    padding: 0.8rem 0;
+    flex: none;
+  }
+
+  /* Make this section dissapear small heights */
+  > .funded-by {
+    width: 100%;
+    flex: 0 1 auto;
+    overflow: hidden;
+  }
+
+  .sidebar-logo {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: calc(0.7 * var(--sidenav-width));
+  }
+}
+
+/* SIDEBAR > NAV */
+
+.sidenav-item {
+  display: grid;
+  grid-template-columns: 1rem 2rem auto;
+  grid-gap: 0.6rem;
+  place-items: center start;
+  transition: all 0.5s;
+  width: 100%;
+
+  /* SIDEBAR > TOP */
+  &.top {
+    height: var(--topbar-height);
+    border-bottom: var(--border-style-light);
+    /* Prevent the item from shrinking */
+    flex-shrink: 0;
+  }
+  &:not(.top) {
+    height: 2.5rem;
+  }
+
+  .icon,
+  svg {
+    grid-column: 2/3;
+    opacity: 0.3;
+  }
+
+  .header,
+  .subheader {
+    grid-column: 2/4;
+  }
+}
+
+/*******
+  TOPBAR
+  ******
+  The topbar will always be visible and fixed on the top of the screen
+*/
+#topbar {
+  z-index: 1000;
+  position: fixed;
+  border-bottom-left-radius: 0.5rem;
+  border-width: 0;
+  top: 0;
+  right: 0;
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  grid-gap: 1em;
+  padding: 0 var(--container-padding);
+  grid-auto-flow: column;
+  place-content: center end;
+}
+
+/*****
+  MAIN
+  ****
+  Holds the app content. Content should be responsive on the x axis
+  Overflow on the y axis is expected and will be scrollable
+*/
+#main {
+  padding-top: var(--topbar-height) !important;
+  margin-left: var(--sidenav-width);
+  padding: var(--container-padding);
+
+  > div {
+    margin-bottom: var(--default-spacing);
+  }
+}
+
+/********************
+  RESPONSIVENESS
+  **************
+  Safari has been reported to cause issues with a grid-area 
+  responsive layout. When react re-painted the DOM, some
+  node's scroll position was reseted.
+*/
+#main,
+#topbar,
+#sidebar {
+  transition: margin-left var(--transition-time);
+}
+@media only screen and (max-width: 40rem) {
+  #sidebar {
+    transition: width var(--transition-time);
+    width: var(--sidenav-collapsed-width);
+    border-right-width: 0;
+
+    .sidebar-logo {
+      width: calc(0.2 * var(--sidenav-width));
+    }
+  }
+  #main {
+    margin-left: var(--sidenav-collapsed-width);
+  }
+}
+
+/********************
+  Generic section
+  *******************
+ */
+
+.section-spacing > * {
+  margin-bottom: var(--default-spacing);
+}
+
+/*************
+  Additional
+  ************
+*/
+.button-group > *:not(:last-child) {
+  margin-right: var(--default-spacing);
+}

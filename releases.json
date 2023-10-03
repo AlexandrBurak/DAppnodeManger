@@ -1,0 +1,87 @@
+{
+  "0.2.17": {
+    "hash": "/ipfs/QmRshT3tfssyqZSsfrkKj6Lje3J7SXmRVxTGfX1WYjVsYf",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Fri, 01 Nov 2019 00:17:50 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.17&h=%2Fipfs%2FQmRshT3tfssyqZSsfrkKj6Lje3J7SXmRVxTGfX1WYjVsYf"
+  },
+  "0.2.18": {
+    "hash": "/ipfs/QmeQPc55XXCVvf1BDVXdJZi2jRSC1Q5Ahcj2jxfxrQQaiY",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Wed, 13 Nov 2019 18:29:06 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.18&h=%2Fipfs%2FQmeQPc55XXCVvf1BDVXdJZi2jRSC1Q5Ahcj2jxfxrQQaiY"
+  },
+  "0.2.19": {
+    "hash": "/ipfs/QmVitewYpr8qcgkfFDGR7mjiLUiwaMcStvygUPyLj33AQb",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Thu, 14 Nov 2019 14:14:56 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.19&h=%2Fipfs%2FQmVitewYpr8qcgkfFDGR7mjiLUiwaMcStvygUPyLj33AQb"
+  },
+  "0.2.20": {
+    "hash": "/ipfs/QmQWjQbsdB9nFp4WSqQjsvLC5nKaUGHR5FaywBxhuWUrpc",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Wed, 20 Nov 2019 17:18:10 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.20&h=%2Fipfs%2FQmQWjQbsdB9nFp4WSqQjsvLC5nKaUGHR5FaywBxhuWUrpc"
+  },
+  "0.2.21": {
+    "hash": "/ipfs/QmTs7z4FykYYF1nz32qXaMtUyQUXhRZuYRf1TbzBWRkXny",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Thu, 21 Nov 2019 01:26:33 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.21&h=%2Fipfs%2FQmTs7z4FykYYF1nz32qXaMtUyQUXhRZuYRf1TbzBWRkXny"
+  },
+  "0.2.23": {
+    "hash": "/ipfs/QmciQdUUVJwrjHUGYXhfZ2vEE8p8QmWArVpBeJAqueZPcY",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Thu, 26 Dec 2019 19:59:17 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.23&h=%2Fipfs%2FQmciQdUUVJwrjHUGYXhfZ2vEE8p8QmWArVpBeJAqueZPcY"
+  },
+  "0.2.28": {
+    "hash": "/ipfs/QmTdTUx6d7FyjQRhGwrooK4DhhNfRkxhSxopvB96aNkAcq",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Fri, 24 Apr 2020 11:29:11 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.28&h=%2Fipfs%2FQmTdTUx6d7FyjQRhGwrooK4DhhNfRkxhSxopvB96aNkAcq"
+  },
+  "0.2.29": {
+    "hash": "/ipfs/Qmc1VT7khMjsCghRKJzULyucVrhLMhZyrLmSDNG2TJSRV4",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Thu, 30 Apr 2020 16:55:29 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.29&h=%2Fipfs%2FQmc1VT7khMjsCghRKJzULyucVrhLMhZyrLmSDNG2TJSRV4"
+  },
+  "0.2.31": {
+    "hash": "/ipfs/QmZzAVE5EV2oXB7eWMDrbj2hun3ZX3yw8PqJtJcxyQPbem",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Thu, 21 May 2020 17:47:34 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=dappmanager.dnp.dappnode.eth&v=0.2.31&h=%2Fipfs%2FQmZzAVE5EV2oXB7eWMDrbj2hun3ZX3yw8PqJtJcxyQPbem"
+  },
+  "0.2.32": {
+    "hash": "/ipfs/QmZrwaduHpyuj67P4jT2gm86b4riThWgjVefmwj8mb7VLn",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Thu, 28 May 2020 14:55:07 GMT"
+    }
+  },
+  "0.2.43": {
+    "hash": "/ipfs/QmXo12aNaPPwnvbUa89fAhrmcdfYVUVYtcLH1WdHPer1Aj",
+    "uploadedTo": {
+      "http://172.33.1.5:5001": "Thu, 06 Jul 2023 09:16:32 GMT"
+    }
+  }
+}
