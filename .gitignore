@@ -52,3 +52,5 @@ packages/*/package-lock.json
 packages/dappmanager/dist
 packages/dappmanager/DNCORE
 packages/dappmanager/dnp_repo
+
+.idea/
