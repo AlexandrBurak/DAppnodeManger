@@ -85,6 +85,7 @@ export const params = {
     "http://localhost:3001",
     "http://my.dappnode",
     "http://dappnode.local",
+    "*",
   ],
 
   // API auth sessions
