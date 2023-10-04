@@ -91,7 +91,14 @@ export function startHttpApi({
 }): http.Server {
   const app = express();
   const server = new http.Server(app);
-  const io = new Server(server, { serveClient: false });
+  const io = new Server(server, {
+      cors: {
+        origin: ["http://localhost:3000", "http://localhost:3001", "http://dappnode.local", "http://my.dappnode"],
+      },
+      serveClient: false,
+    }
+  );
+
 
   // Subscriptions
   const subscriptions = subscriptionsFactory(io, subscriptionsLogger);
