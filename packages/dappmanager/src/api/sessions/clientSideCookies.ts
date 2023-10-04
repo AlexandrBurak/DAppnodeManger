@@ -31,6 +31,7 @@ export class ClientSideCookies implements SessionsManager {
       httpOnly: true, // Cookie not accessible from client-side js
       secure: false, // DAppNode UI is served over HTTP
       maxAge: params.SESSIONS_TTL_MS,
+      sameSite: "none",
     });
   }
 
