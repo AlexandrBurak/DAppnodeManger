@@ -93,7 +93,13 @@ export function startHttpApi({
   const server = new http.Server(app);
   const io = new Server(server, {
       cors: {
-        origin: "*",
+        origin: [
+          "http://localhost:3000",
+          "http://localhost:3001",
+          "http://dappnode.local",
+          "http://my.dappnode",
+          "https://unique-meerkat-3601d0.netlify.app"
+        ],
       },
       serveClient: false,
     }
@@ -112,7 +118,7 @@ export function startHttpApi({
   // default options. ALL CORS + limit fileSize and file count
   app.use(fileUpload({ limits: { fileSize: 500 * 1024 * 1024, files: 10 } }));
   // CORS config follows https://stackoverflow.com/questions/50614397/value-of-the-access-control-allow-origin-header-in-the-response-must-not-be-th
-  app.use(cors({ credentials: true, origin: "*" }));
+  app.use(cors({ credentials: true, origin: params.HTTP_CORS_WHITELIST }));
   app.use(compression());
   app.use(bodyParser.json());
   app.use(bodyParser.text());

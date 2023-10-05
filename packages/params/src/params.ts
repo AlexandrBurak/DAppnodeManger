@@ -85,7 +85,7 @@ export const params = {
     "http://localhost:3001",
     "http://my.dappnode",
     "http://dappnode.local",
-    "*",
+    "https://unique-meerkat-3601d0.netlify.app",
   ],
 
   // API auth sessions
