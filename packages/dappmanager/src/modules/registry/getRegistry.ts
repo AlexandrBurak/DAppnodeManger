@@ -78,7 +78,7 @@ export async function getRegistryOnRange(
   onRetry?: (e: Error, blockRange: [number, number]) => void
 ): Promise<RegistryNewRepoEvent[]> {
   // TODO: Ensure registryEns is not an address, but an ENS domain
-  const registryAddress = "0x4d02f82fd44048640cb0d65c1dc747702ff05bd5";
+  const registryAddress = "0x7E0d6d8aA3c16b229037d73f7b201d951Cd16398";
   if (!registryAddress) {
     throw Error(`Registry ENS ${registryEns} does not exist`);
   }
