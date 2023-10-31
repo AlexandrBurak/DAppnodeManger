@@ -60,6 +60,7 @@ export async function fetchRegistry({
 }): Promise<DirectoryItem[]> {
   const provider = await getEthersProvider();
   const registry = await getRegistry(provider, addressOrEnsName, fromBlock);
+  console.log("Call before fetchRegistryIpfsData")
   return await fetchRegistryIpfsData(registry);
 }
 

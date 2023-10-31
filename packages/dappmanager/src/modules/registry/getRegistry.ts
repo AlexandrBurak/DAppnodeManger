@@ -62,7 +62,7 @@ export async function getRegistry(
     latestBlock,
     onEventsProgress
   );
-
+  console.log("Registry not cached ", registryNotCached);
   return getMockData(sortPackagesByTimestamp(registryNotCached));
 }
 
