@@ -13,169 +13,171 @@ export const contractName = "registry";
 export const address = "0x7E0d6d8aA3c16b229037d73f7b201d951Cd16398";
 // public.dappnode.eth: 0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a
 // dnp.dappnode.eth: 0x266bfdb2124a68beb6769dc887bd655f78778923
+
+
 export const abi = [
   {
     constant: true,
     inputs: [],
     name: "REPO_APP_NAME",
-    outputs: [{ name: "", type: "string" }],
+    outputs: [{name: "", type: "string"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "APM_APP_NAME",
-    outputs: [{ name: "", type: "string" }],
+    outputs: [{name: "", type: "string"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "ENS_SUB_APP_NAME",
-    outputs: [{ name: "", type: "string" }],
+    outputs: [{name: "", type: "string"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "registrar",
-    outputs: [{ name: "", type: "address" }],
+    outputs: [{name: "", type: "address"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: false,
     inputs: [
-      { name: "_name", type: "string" },
-      { name: "_dev", type: "address" },
-      { name: "_initialSemanticVersion", type: "uint16[3]" },
-      { name: "_contractAddress", type: "address" },
-      { name: "_contentURI", type: "bytes" }
+      {name: "_name", type: "string"},
+      {name: "_dev", type: "address"},
+      {name: "_initialSemanticVersion", type: "uint16[3]"},
+      {name: "_contractAddress", type: "address"},
+      {name: "_contentURI", type: "bytes"},
     ],
     name: "newRepoWithVersion",
-    outputs: [{ name: "", type: "address" }],
+    outputs: [{name: "", type: "address"}],
     payable: false,
     stateMutability: "nonpayable",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "CREATE_REPO_ROLE",
-    outputs: [{ name: "", type: "bytes32" }],
+    outputs: [{name: "", type: "bytes32"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "EVMSCRIPT_REGISTRY_APP_ID",
-    outputs: [{ name: "", type: "bytes32" }],
+    outputs: [{name: "", type: "bytes32"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "appId",
-    outputs: [{ name: "", type: "bytes32" }],
+    outputs: [{name: "", type: "bytes32"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "getInitializationBlock",
-    outputs: [{ name: "", type: "uint256" }],
+    outputs: [{name: "", type: "uint256"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "EVMSCRIPT_REGISTRY_APP",
-    outputs: [{ name: "", type: "bytes32" }],
+    outputs: [{name: "", type: "bytes32"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [
-      { name: "_sender", type: "address" },
-      { name: "_role", type: "bytes32" },
-      { name: "params", type: "uint256[]" }
+      {name: "_sender", type: "address"},
+      {name: "_role", type: "bytes32"},
+      {name: "params", type: "uint256[]"},
     ],
     name: "canPerform",
-    outputs: [{ name: "", type: "bool" }],
+    outputs: [{name: "", type: "bool"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: false,
     inputs: [
-      { name: "_name", type: "string" },
-      { name: "_dev", type: "address" }
+      {name: "_name", type: "string"},
+      {name: "_dev", type: "address"},
     ],
     name: "newRepo",
-    outputs: [{ name: "", type: "address" }],
+    outputs: [{name: "", type: "address"}],
     payable: false,
     stateMutability: "nonpayable",
-    type: "function"
+    type: "function",
   },
   {
     constant: false,
-    inputs: [{ name: "_registrar", type: "address" }],
+    inputs: [{name: "_registrar", type: "address"}],
     name: "initialize",
     outputs: [],
     payable: false,
     stateMutability: "nonpayable",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
     inputs: [],
     name: "kernel",
-    outputs: [{ name: "", type: "address" }],
+    outputs: [{name: "", type: "address"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     constant: true,
-    inputs: [{ name: "_script", type: "bytes" }],
+    inputs: [{name: "_script", type: "bytes"}],
     name: "getExecutor",
-    outputs: [{ name: "", type: "address" }],
+    outputs: [{name: "", type: "address"}],
     payable: false,
     stateMutability: "view",
-    type: "function"
+    type: "function",
   },
   {
     anonymous: false,
     inputs: [
-      { indexed: false, name: "id", type: "bytes32" },
-      { indexed: false, name: "name", type: "string" },
-      { indexed: false, name: "repo", type: "address" }
+      {indexed: false, name: "id", type: "bytes32"},
+      {indexed: false, name: "name", type: "string"},
+      {indexed: false, name: "repo", type: "address"},
     ],
     name: "NewRepo",
-    type: "event"
+    type: "event",
   },
   {
     anonymous: false,
-    inputs: [{ indexed: false, name: "proxy", type: "address" }],
+    inputs: [{indexed: false, name: "proxy", type: "address"}],
     name: "NewAppProxy",
-    type: "event"
-  }
+    type: "event",
+  },
 ];
