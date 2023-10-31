@@ -14,6 +14,7 @@ import { ethereumClient } from "./index.js";
 export async function getEthersProvider(): Promise<ethers.providers.JsonRpcProvider> {
   const url = await getEthProviderUrl();
   // Store (just for UI / info purposes) the latest used url
+  console.log("URL for ethers provider: ", url);
   db.ethProviderUrl.set(url);
   return new ethers.providers.JsonRpcProvider(url);
 }
@@ -25,8 +26,10 @@ export async function getEthersProvider(): Promise<ethers.providers.JsonRpcProvi
  */
 export async function getEthProviderUrl(): Promise<string> {
   console.log("Here 1")
-  if (params.ETH_MAINNET_RPC_URL_OVERRIDE)
+  if (params.ETH_MAINNET_RPC_URL_OVERRIDE) {
+    console.log("Returning ", params.ETH_MAINNET_RPC_URL_OVERRIDE)
     return params.ETH_MAINNET_RPC_URL_OVERRIDE;
+  }
   console.log("Here 2")
   const target = ethereumClient.computeEthereumTarget();
   const fallback = db.ethClientFallback.get();
