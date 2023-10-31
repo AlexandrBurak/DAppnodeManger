@@ -6,7 +6,7 @@ import { wrapError } from "../../utils/wrapError.js";
 import { DirectoryDnp } from "@dappnode/toolkit";
 
 // Topic name
-const eventNewRepo = "NewRepo";
+const eventNewRepo = "AddPackage";
 const maxBlocksPerRequest = 100_000;
 const minBlocksPerRequest = 5;
 /** Failures are very slow, decrease size fast to get to a good range fast */
@@ -78,7 +78,7 @@ export async function getRegistryOnRange(
   onRetry?: (e: Error, blockRange: [number, number]) => void
 ): Promise<RegistryNewRepoEvent[]> {
   // TODO: Ensure registryEns is not an address, but an ENS domain
-  const registryAddress = await provider.resolveName(registryEns);
+  const registryAddress = "0x4d02f82fd44048640cb0d65c1dc747702ff05bd5";
   if (!registryAddress) {
     throw Error(`Registry ENS ${registryEns} does not exist`);
   }

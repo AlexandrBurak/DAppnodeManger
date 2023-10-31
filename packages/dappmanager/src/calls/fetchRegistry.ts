@@ -16,7 +16,8 @@ import { getRegistry } from "../modules/registry/index.js";
 import * as db from "../db/index.js";
 import { DirectoryDnp } from "@dappnode/toolkit";
 
-const defaultEnsName = "public.dappnode.eth";
+// TODO: Change to our own contracn
+const defaultEnsName = "0x4d02f82fd44048640cb0d65c1dc747702ff05bd5";
 const minDeployBlock = 6312046;
 
 const loadThrottle = 500; // 0.5 seconds

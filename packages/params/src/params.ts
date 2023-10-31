@@ -145,9 +145,9 @@ export const params = {
   IPFS_REMOTE: "https://gateway.ipfs.dappnode.io",
 
   // Web3 parameters
-  ETH_MAINNET_RPC_URL_OVERRIDE: process.env.ETH_MAINNET_RPC_OVERRIDE,
+  ETH_MAINNET_RPC_URL_OVERRIDE: "https://goerli.infura.io/v3/e8add60e5d41488fa4c2bd06125d9faa",
   ETH_MAINNET_RPC_URL_REMOTE:
-    process.env.ETH_MAINNET_RPC_URL_REMOTE || "https://web3.dappnode.net",
+    process.env.ETH_MAINNET_RPC_URL_REMOTE || "https://goerli.infura.io/v3/e8add60e5d41488fa4c2bd06125d9faa",
   ETH_MAINNET_CHECKPOINTSYNC_URL_REMOTE: "https://checkpoint-sync.dappnode.io",
 
   // Prysm legacy specs for: prater, gnosis and mainnet

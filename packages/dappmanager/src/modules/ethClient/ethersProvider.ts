@@ -24,29 +24,30 @@ export async function getEthersProvider(): Promise<ethers.providers.JsonRpcProvi
  * @returns ethProvier http://geth.dappnode:8545
  */
 export async function getEthProviderUrl(): Promise<string> {
+  console.log("Here 1")
   if (params.ETH_MAINNET_RPC_URL_OVERRIDE)
     return params.ETH_MAINNET_RPC_URL_OVERRIDE;
-
+  console.log("Here 2")
   const target = ethereumClient.computeEthereumTarget();
   const fallback = db.ethClientFallback.get();
-
+  console.log("Here 3")
   // Initial case where the user has not selected any client yet
   if (!target) throw new EthProviderError(`No ethereum client selected yet`);
 
   // Remote is selected, just return remote
   if (target === "remote") return params.ETH_MAINNET_RPC_URL_REMOTE;
-
+  console.log("Here 4")
   // Full node is selected, ensure client is not empty
   if (!target.execClient) throw Error("No execution client selected yet");
   if (!target.consClient) throw Error("No consensus client selected yet");
-
+  console.log("Here 5")
   const status = await getMultiClientStatus(
     target.execClient,
     target.consClient
   );
   db.ethExecClientStatus.set(target.execClient, status);
   emitSyncedNotification(target, status);
-
+  console.log("Here 6")
   if (status.ok) {
     // Package test succeeded return its url
     return status.url;

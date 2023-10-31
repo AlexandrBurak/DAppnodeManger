@@ -10,7 +10,7 @@
 // This is because the SC is "upgradable".
 
 export const contractName = "registry";
-export const address = "0x1d9Bdf492e59A306DDa59E5aA13E7F1C7D89197A";
+export const address = "0x4d02f82fd44048640cb0d65c1dc747702ff05bd5";
 // public.dappnode.eth: 0x9f85ae5aefe4a3eff39d9a44212aae21dd15079a
 // dnp.dappnode.eth: 0x266bfdb2124a68beb6769dc887bd655f78778923
 export const abi = [

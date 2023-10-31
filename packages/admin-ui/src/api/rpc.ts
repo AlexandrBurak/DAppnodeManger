@@ -10,6 +10,7 @@ let apiStarted = false;
 
 export const apiRpc: IApiRpc = {
   async call<R>(payload: RpcPayload) {
+    console.log("RpcPayload", payload);
     const socket = setupSocket();
     return await new Promise<RpcResponse<R>>(resolve => {
       socket.emit("rpc", payload, resolve);
