@@ -176,6 +176,16 @@ export const abi = [
   },
   {
     anonymous: false,
+    inputs: [
+      {indexed: false, name: "packageIdx", type: "uint256"},
+      {indexed: false, name: "name", type: "string"},
+      {indexed: false, name: "repo", type: "address"},
+    ],
+    name: "AddPackage",
+    type: "event",
+  },
+  {
+    anonymous: false,
     inputs: [{indexed: false, name: "proxy", type: "address"}],
     name: "NewAppProxy",
     type: "event",
