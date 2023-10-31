@@ -16,8 +16,8 @@ import { getRegistry } from "../modules/registry/index.js";
 import * as db from "../db/index.js";
 import { DirectoryDnp } from "@dappnode/toolkit";
 
-// TODO: Change to our own contracn
-const defaultEnsName = "0x4d02f82fd44048640cb0d65c1dc747702ff05bd5";
+// TODO: Change to our own contract
+const defaultEnsName = "0x7E0d6d8aA3c16b229037d73f7b201d951Cd16398";
 const minDeployBlock = 6312046;
 
 const loadThrottle = 500; // 0.5 seconds
