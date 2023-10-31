@@ -183,6 +183,7 @@ function getTopicFromEvent(
   iface: ethers.utils.Interface,
   eventName: string
 ): string {
+  console.log("All events: ", Object.values(iface.events));
   const event = Object.values(iface.events).find(
     eventValue => eventValue.name === eventName
   );
