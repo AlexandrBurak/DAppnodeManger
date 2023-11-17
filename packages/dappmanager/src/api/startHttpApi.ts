@@ -209,8 +209,10 @@ export function startHttpApi({
   // prettier-ignore
   app.get("*", (req, res) => res.sendFile(path.resolve(params.UI_FILES_PATH, "index.html")));
 
-  server.listen(params.HTTP_API_PORT, () =>
-    logs.info(`HTTP API ${params.HTTP_API_PORT}`)
+  server.listen(params.HTTP_API_PORT, () => {
+      console.log(`Listen on port ${params.HTTP_API_PORT}`)
+      logs.info(`HTTP API ${params.HTTP_API_PORT}`);
+    }
   );
   return server;
 }
