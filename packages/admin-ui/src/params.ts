@@ -2,6 +2,8 @@ import { urlJoin } from "utils/url";
 
 // JSON RPC API
 export const apiUrl = process.env.REACT_APP_API_URL || "http://my.dappnode/";
+
+console.log(`API URL FROM FRONTEND ${apiUrl}`)
 export const apiUrls = {
   ping: urlJoin(apiUrl, "ping"),
 

@@ -40,7 +40,25 @@ export function Register({
         setReqStatus({ error: e });
       }
   }
+// 0xd6d149f302c58b63670c0e64757a9490fcb6d3dc10098e8f34418c354773a644
+  /*
+  1: sessionKeys.decodeSessionKeys: Option<Vec<(Bytes, KeyTypeId)>>
 
+[
+  [
+    0xae9ff6d55dc9d85d750c1d3deba30a4f0b6f0736195633fb9052825708fa5f7d
+    1,700,946,274
+  ]
+  [
+    0x912bcd019058c619f77ecf81bb17b8fc93c3da609d33a9bc874f67d8255a5e33
+    1,851,880,039
+  ]
+  [
+    0x729fb414cd23d971de42b710e16ce564c6f96454468b2e47067b7a5d6934397d
+    1,852,796,265
+  ]
+]
+   */
   function onCopiedRecoveryToken() {
     refetchStatus()?.catch(() => {});
   }
