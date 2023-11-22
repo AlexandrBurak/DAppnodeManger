@@ -32,7 +32,7 @@ export default async function resolveReleaseName(
   // Correct version
   if (version === "latest") version = "*";
   if (name === 'vitreus.power.plant.0x7E0d6d8aA3c16b229037d73f7b201d951Cd16398') {
-    name = 'QmRfBDtwE17Ko9ZsU9AV1MSP1jwfvFfLBgjvv7FBZJQS6e';
+    name = 'QmdKCsJowZhUn11MHKpXhzbBRF6vA9qWjYw2NBaUBAKu6G';
     console.log("Inside custom hardcode")
   }
   console.log(`PACKGE NAME ${name}`);
