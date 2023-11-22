@@ -1,4 +1,4 @@
-import { Apm } from "../apm/index.js";
+import {Apm} from "../apm/index.js";
 import {
   isIpfsHash,
   isEnsDomain,
@@ -31,7 +31,11 @@ export default async function resolveReleaseName(
 
   // Correct version
   if (version === "latest") version = "*";
-
+  if (name === 'vitreus.power.plant.0x7E0d6d8aA3c16b229037d73f7b201d951Cd16398') {
+    name = 'ipfs/QmasJJwzEcsV7DaUY2zXZWQ2h2g4gn3wnaRWzG9HtNqVHd';
+    console.log("Inside custom hardcode")
+  }
+  console.log(`PACKGE NAME ${name}`);
   // Normal case, name = eth domain & ver = semverVersion
   if (isEnsDomain(name) && isSemver(version))
     return {
